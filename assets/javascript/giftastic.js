@@ -65,7 +65,8 @@ $("#add-topic").on("click", function(event) {
   renderButtons();
 });
 
-$(document).on("click", ".topic", displayTopicInfo);
+
+$(document).on("click", ".topic", displayGif);
 
 renderButtons();
 
@@ -82,11 +83,3 @@ $(document).on("click", '.activeGifs', function(event) {
   $(stillId).show();
   $(activeId).hide();
 });
-
-      
-    }
-    
-  })
-
-  
-}

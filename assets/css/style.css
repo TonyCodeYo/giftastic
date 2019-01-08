@@ -1,5 +1,7 @@
 body {
-  background-color: black;
+  background-color: rgb(243, 241, 234);
+  font-family: 'Inconsolata', monospace;
+  background-color: honeydew;
 }
 
 button,
@@ -9,11 +11,17 @@ input {
   margin: 10px;
 }
 
+h1 {
+  font-family: 'Righteous', cursive;
+  color: rgb(3, 53, 10);
+  padding: 2%;
+}
+
 button {
-  background-color: green;
-  border: 2px solid #000;
-  border-radius: 3px;
-  color: white;
+  background-color: honeydew;
+  border: 2px solid rgb(252, 174, 123);
+  border-radius: 90px;
+  color: rgb(131, 128, 128);
 }
 
 p {
@@ -23,9 +31,11 @@ p {
 }
 
 .container {
-  background-image: url(../images/background.jpg);
+  background-image: url(../images/wheat-3506758_1280.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
+  border: 2px solid rgb(252, 174, 123);
+  border-radius: 20px;
 }
 
 .topicDiv {
@@ -36,3 +46,13 @@ p {
   cursor: -webkit-grab;
 }
 
+#add-topic {
+  background-color: #fff;
+  border-radius: 20px;
+  color: dimgray;
+}
+
+#topic-input {
+  border-radius: 50px;
+  width: 40%;
+}
