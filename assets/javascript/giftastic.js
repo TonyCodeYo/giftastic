@@ -60,11 +60,12 @@ for (let i = 0; i < topics.length; i++) {
 $("#add-topic").on("click", function(event) {
   event.preventDefault();
   const topic = $("#topic-input").val().trim();
-  topics.push(topic);
-  $("#topic-input").val("");
-  renderButtons();
+  if (topic) {
+    topics.push(topic);
+    $("#topic-input").val("");
+    renderButtons();
+  }
 });
-
 
 $(document).on("click", ".topic", displayGif);
 
